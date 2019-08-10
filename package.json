@@ -1,15 +1,19 @@
 {
   "name": "meli-product-list",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node ./server",
+    "build": "NODE_ENV=production next build ./client",
+    "dev": "nodemon --inspect ./server"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "next": "9.0.3",
     "react": "16.8.6",
     "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
