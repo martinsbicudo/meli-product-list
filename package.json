@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "NODE_ENV=production node ./server",
+    "start:docker": "sh ./conf/docker/start.sh",
     "build": "NODE_ENV=production next build ./client",
     "dev": "nodemon --inspect ./server"
   },
