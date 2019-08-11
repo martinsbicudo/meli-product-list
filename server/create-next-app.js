@@ -17,5 +17,5 @@ module.exports = (app) => {
   http.createServer(app)
     .listen(SERVER_PORT)
     .on('error', onChangeBlur);
-  console.log(`> Server ready on port ${SERVER_PORT}`);
+  console.log(`> Server ready on port ${SERVER_PORT}`); // eslint-disable-line
 };

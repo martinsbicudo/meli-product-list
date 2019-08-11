@@ -1,8 +1,10 @@
+const withESLint = require('next-eslint');
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
 const { IS_PROD } = require('../../constants');
 
 module.exports = [
+  [withESLint],
   [withCSS, {
     cssModules: true,
     cssLoaderOptions: {
