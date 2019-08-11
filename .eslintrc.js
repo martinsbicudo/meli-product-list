@@ -22,7 +22,8 @@ module.exports = {
   },
   extends: ['airbnb', 'plugin:react/recommended', 'plugin:jest/recommended'],
   rules: {
-    'no-param-reassign': 0
+    'no-param-reassign': 0,
+    'react/jsx-filename-extension': [1, { 'extensions': ['spec.js', '.jsx'] }],
   },
   settings: {
     'import/resolver': {
