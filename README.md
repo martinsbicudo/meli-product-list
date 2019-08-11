@@ -48,8 +48,12 @@ npm run start:docker
 ```
 
 Run project **without** `Docker`
-> Project run at port **80**
+> Project run at port **3000**
 
 ```sh
-npm run start
+npm start
+```
+**OR**
+```sh
+npm run dev
 ```

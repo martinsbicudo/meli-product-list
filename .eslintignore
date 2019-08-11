@@ -1,0 +1,6 @@
+client/.next/
+_next
+_tmp
+build
+coverage
+node_modules
