@@ -1,0 +1,27 @@
+html { min-width: 320px; }
+
+html,
+body { font-size: 10px; }
+
+html,
+body,
+body > div,
+main { height: 100%; }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main > div { flex: 1; }
+
+// PLACEHOLDER INPUT
+::placeholder {
+  color: map-get($colors, "meli-dusty-gray") !important;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { color: map-get($colors, "meli-dusty-gray") !important; }
+
+::-ms-input-placeholder { color: map-get($colors, "meli-dusty-gray") !important; }
+// /

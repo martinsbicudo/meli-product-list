@@ -1,11 +1,12 @@
 import React from 'react';
 import Example from '.';
 
-describe('Meli - Containers - <Example />', () => {
-  const createWrapper = () => mount(<Example />);
+describe('Containers - <Example />', () => {
+  const createWrapper = () => render(<Example />);
 
-  it('Wrapper Snapshot', () => {
-    const Wrapper = createWrapper();
-    expect(Wrapper).toMatchSnapshot();
+  test('Wrapper Snapshot', () => {
+    const { asFragment } = createWrapper();
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });

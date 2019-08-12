@@ -1,0 +1,78 @@
+$child: 0;
+$bars: (
+  (
+    left: 0,
+    animation-delay: -.30s,
+    background: map-get($colors, "meli-dodger-blue")
+  ),
+  (
+    left: 10px,
+    animation-delay: -.24s,
+    background: map-get($colors, "meli-gallery")
+  ),
+  (
+    left: 20px,
+    animation-delay: -.18s,
+    background: map-get($colors, "meli-turbo")
+  ),
+  (
+    left: 30px,
+    animation-delay: -.12s,
+    background: map-get($colors, "meli-gallery")
+  ),
+  (
+    left: 40px,
+    animation-delay: -.06s,
+    background: map-get($colors, "meli-dodger-blue")
+  ),
+);
+
+@keyframes accordion {
+
+  0% {
+    top: 6px;
+    height: 64px;
+  }
+
+  50%,
+  100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
+.Loading {
+  margin: auto;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+
+  &Bars {
+    display: inline-block;
+    position: relative;
+    width: 45px;
+    height: 64px;
+  }
+
+  &Bar {
+    display: inline-block;
+    position: absolute;
+    left: 7px;
+    width: 5px;
+    animation: accordion .5s cubic-bezier(0, .5, .5, 1) infinite;
+  }
+}
+
+.LoadingBar {
+  @each $bar in $bars {
+    $child: $child + 1;
+
+    &:nth-child(#{$child}) {
+      left: map-get($bar, "left");
+      animation-delay: map-get($bar, "animation-delay");
+      background: map-get($bar, "background");
+    }
+  }
+}

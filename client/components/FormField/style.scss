@@ -1,0 +1,19 @@
+.FormField {
+  flex: 1;
+  background-color: map-get($colors, "meli-white");
+  border-radius: .2rem;
+  border: .1rem solid transparent;
+  outline: 0;
+
+  &Input {
+    background: inherit;
+    width: inherit;
+    border: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  &Focus { border-color: map-get($colors, "meli-denim"); }
+}

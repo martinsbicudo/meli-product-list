@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components - <ButtonField /> Wrapper Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ButtonField"
+  >
+    <div
+      class="FormField ButtonFieldFormField"
+    >
+      <input
+        class="FormFieldInput"
+        type="text"
+      />
+    </div>
+    <button
+      class="Button ButtonFieldButton"
+      placeholder="TEST_PLACEHOLDER"
+      type="button"
+    />
+  </div>
+</DocumentFragment>
+`;

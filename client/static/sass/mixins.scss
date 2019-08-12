@@ -1,0 +1,36 @@
+@mixin query-min($name, $queries: map-get($grid, tags)) {
+  $min: map-get($queries, $name);
+
+  @media (min-width: $min + 1px) {
+    @content;
+  }
+}
+
+@mixin query-max($name, $queries: map-get($grid, tags)) {
+  $max: map-get($queries, $name);
+
+  @media (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin query-between($nameMin, $nameMax, $queries: map-get($grid, tags)) {
+  $min: map-get($queries, $nameMin) + 1px;
+  $max: map-get($queries, $nameMax);
+
+  @if($min < $max) {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+
+  @else {
+    @include query-min($nameMin) {
+      @content;
+    }
+
+    @include query-max($nameMax) {
+      @content;
+    }
+  }
+}
