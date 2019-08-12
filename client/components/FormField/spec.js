@@ -22,7 +22,7 @@ describe('Components - <FormField />', () => {
     />,
   );
 
-  test('Should calls onFocus', async () => {
+  test('Should calls onFocus', () => {
     const { getByPlaceholderText } = createWrapper();
 
     fireEvent.focus(getByPlaceholderText(testMessagePlaceholder));
@@ -31,7 +31,7 @@ describe('Components - <FormField />', () => {
     spyOnFocus.mockRestore();
   });
 
-  test('Should calls onBlur', async () => {
+  test('Should calls onBlur', () => {
     const { getByPlaceholderText } = createWrapper({
       onChange: () => {},
     });
@@ -43,7 +43,7 @@ describe('Components - <FormField />', () => {
     spyOnBlur.mockRestore();
   });
 
-  test('Should calls onChange', async () => {
+  test('Should calls onChange', () => {
     const { getByPlaceholderText } = createWrapper();
 
     fireEvent.change(getByPlaceholderText(testMessagePlaceholder), {

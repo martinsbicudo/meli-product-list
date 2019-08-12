@@ -21,21 +21,21 @@ describe('Components - <EmptyState />', () => {
     </EmptyState>,
   );
 
-  test('Should finds Image and Title', async () => {
+  test('Should finds Image and Title', () => {
     const { getByText, getByAltText } = createWrapper();
 
     expect(getByAltText(testMessageImage)).toBeInTheDocument();
     expect(getByText(testMessageTitle)).toBeInTheDocument();
   });
 
-  test('Should finds Children', async () => {
+  test('Should finds Children', () => {
     const testMessageChildren = 'TEST_CHILDREN';
     const { getByText } = createWrapper(null, <span>{testMessageChildren}</span>);
 
     expect(getByText(testMessageChildren)).toBeInTheDocument();
   });
 
-  test('Should finds Description', async () => {
+  test('Should finds Description', () => {
     const testMessageDescription = 'TEST_CHILDREN';
     const { getByText } = createWrapper({
       description: <span>{testMessageDescription}</span>,
