@@ -1,0 +1,20 @@
+.CardBoard {
+  box-shadow: 0 0 .1rem .1rem map-get($colors, "meli-gallery"),
+    0 0 1rem map-get($colors, "meli-gallery");
+  border-radius: .3rem;
+  padding: 2rem;
+  transition: .1s box-shadow;
+
+  &:hover {
+    box-shadow: 0 0 .1rem .1rem map-get($colors, "meli-gallery"),
+      0 0 3rem darken(map-get($colors, "meli-gallery"), 4%);
+  }
+
+  &Footer {
+    margin: -2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-top: .1px solid map-get($colors, "meli-gallery");
+    width: 100%;
+  }
+}
