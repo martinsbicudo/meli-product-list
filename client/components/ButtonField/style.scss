@@ -1,0 +1,33 @@
+.ButtonField {
+  flex: 1;
+  display: flex;
+  border-radius: .2rem;
+
+  @include query-max("mobile") { flex-wrap: wrap; }
+
+  &FormField {
+    @include query-max("mobile") {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    @include query-min("mobile") {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &Button {
+    @include query-max("mobile") {
+      min-width: 100%;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    @include query-min("mobile") {
+      flex: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

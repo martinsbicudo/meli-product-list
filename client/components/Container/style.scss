@@ -1,0 +1,9 @@
+.Container {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  max-width: map-get($grid, "container");
+  padding: 0 2rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}

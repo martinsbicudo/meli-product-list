@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components - <Button /> Wrapper Snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="Button"
+    type="button"
+  >
+    TEST_MESSAGE
+  </button>
+</DocumentFragment>
+`;

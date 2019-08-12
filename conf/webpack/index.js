@@ -19,11 +19,6 @@ const nextConfig = {
       ...rules(config),
     );
 
-    // RESOLVE EXTENSIONS
-    config.resolve.extensions.push(
-      '.scss',
-    );
-
     // Resolve paths ROOT and Config
     config.resolve.alias = {
       ...config.resolve.alias,
