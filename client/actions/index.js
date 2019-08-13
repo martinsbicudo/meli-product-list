@@ -16,4 +16,20 @@ export const searchProducts = async ({
   }
 };
 
+export const getProductDetails = async ({
+  id,
+  resolve,
+  reject,
+  finish = () => {},
+}) => {
+  try {
+    const response = await axios(`/api/items/${id}`);
+    resolve(response);
+  } catch (e) {
+    reject(e);
+  } finally {
+    finish();
+  }
+};
+
 export default searchProducts;
