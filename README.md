@@ -65,3 +65,10 @@ Run **StyleGuide** with `Storybook`
 ```sh
 npm run storybook
 ```
+
+### Health Check
+> Verify Health of Server, **after run project**
+
+```sh
+curl http://localhost:[PORT]/api/health-check
+```
