@@ -2,10 +2,65 @@
 
 exports[`Containers - <Header /> Wrapper Snapshot 1`] = `
 <DocumentFragment>
-  <header>
+  <header
+    class="Header"
+  >
     <div
-      class="Container"
-    />
+      class="Container HeaderContainer"
+    >
+      <img
+        alt="Mercado Livre"
+        class="HeaderLogoDesktop"
+        src="[object Object]"
+        srcset="[object Object] 2x"
+        title="Mercado Livre"
+      />
+      <img
+        alt="Mercado Livre"
+        class="HeaderLogoMobile"
+        src="[object Object]"
+        srcset="[object Object] 2x"
+        title="Mercado Livre"
+      />
+      <form
+        class="HeaderForm"
+        method="get"
+      >
+        <div
+          class="ButtonField HeaderSearch"
+        >
+          <div
+            class="FormField ButtonFieldFormField"
+          >
+            <input
+              class="FormFieldInput"
+              name="search"
+              placeholder="Buscar produto"
+              type="text"
+              value=""
+            />
+          </div>
+          <button
+            class="Button ButtonFieldButton"
+            disabled=""
+            type="submit"
+          >
+            <img
+              alt="Buscar"
+              class="HeaderSearchImage"
+              src="[object Object]"
+              srcset="[object Object] 2x"
+              title="Buscar"
+            />
+            <span
+              class="HeaderSearchSpan"
+            >
+              Buscar
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
   </header>
 </DocumentFragment>
 `;
