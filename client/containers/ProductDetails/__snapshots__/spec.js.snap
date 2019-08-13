@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers - <ProductDetails /> Wrapper Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="ProductDetails"
+  >
+    <div
+      class="CardBoard ProductDetailsCardBoard"
+    >
+      <figure
+        class="ProductDetailsFigure"
+      >
+        <img
+          alt="TEST_TITLE"
+          src="TEST_IMAGE"
+          title="TEST_TITLE"
+        />
+      </figure>
+      <div
+        class="ProductDetailsInfos"
+      >
+        <h1
+          class="ProductDetailsTitle"
+        >
+          TEST_TITLE
+        </h1>
+        <p
+          class="ProductDetailsPrice"
+        >
+          <span>
+            $
+          </span>
+          300
+          <button
+            class="Button ProductDetailsButton ButtonDodgerBlue ButtonBigger"
+            type="button"
+          >
+            Comprar
+          </button>
+        </p>
+      </div>
+      <div
+        class="CardBoardFooter"
+      >
+        <h2
+          class="ProductDetailsSubTitle"
+        >
+          Descrição do Produto
+        </h2>
+        <p
+          class="ProductDetailsDescription"
+        >
+          TEST_DESCRIPTION
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

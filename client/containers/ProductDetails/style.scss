@@ -1,0 +1,92 @@
+.ProductDetails {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+
+  &,
+  &CardBoard {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &CardBoard {
+    display: flex;
+    flex-wrap: wrap;
+
+    > :last-child {
+      width: 100%;
+      margin-top: 5rem;
+    }
+  }
+
+  &Figure {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+
+    @include query-max("tablet") {
+      min-width: 100%;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    @include query-min("tablet") {
+      width: 60%;
+      padding: 0 2rem 0 3rem;
+    }
+
+    img { max-width: 100%; }
+  }
+
+  &Title,
+  &Price,
+  &SubTitle,
+  &Description {
+    @include query-max("tablet") { text-align: center; }
+  }
+
+  &Infos {
+    @include query-max("tablet") { width: 100%; }
+
+    @include query-min("tablet") {
+      width: 40%;
+      padding: 5rem 3rem 0 0;
+    }
+  }
+
+  &Title {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  &Price {
+    @include query-max("tablet") { font-size: 2.4rem; }
+
+    @include query-min("tablet") {
+      font-size: 3rem;
+      font-weight: bolder;
+    }
+
+    span {
+      color: map-get($colors, "meli-dodger-blue");
+      margin-right: .3rem;
+    }
+  }
+
+  &Button {
+    @include query-max("tablet") { margin: 3rem auto 0; }
+
+    @include query-min("tablet") {
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+
+  &SubTitle {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &Description { font-size: 1.2rem; }
+}
