@@ -16,6 +16,7 @@ module.exports = {
     React: true,
     render: true,
     fireEvent: true,
+    createAxiosMock: true,
   },
   extends: ['airbnb', 'plugin:react/recommended', 'plugin:jest/recommended'],
   rules: {
