@@ -3,8 +3,8 @@ module.exports = {
     cssnano: {
       zindex: false,
     },
-    autoprefixer: {
-      browsers: ['last 2 versions'],
-    },
+    autoprefixer: {},
+    'postcss-normalize': {},
+    'postcss-css-reset': {},
   },
 };
