@@ -1,0 +1,20 @@
+$colors: (
+  meli-white: #ffffff,
+  meli-gallery: #EEEEEE,
+  meli-dusty-gray: #999999,
+  meli-dove-gray: #666666,
+  meli-mine-shaft: #333333,
+  meli-dodger-blue: #3483FA,
+  meli-denim: #1082be,
+  meli-turbo: #FFE600,
+);
+
+$grid: (
+  container: 102.4rem,
+  tags: (
+    mobile: 368px,
+    plus: 568px,
+    tablet: 768px,
+    desktop: 1024px
+  )
+);

@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Meli - Containers - <Example /> Wrapper Snapshot 1`] = `
-<Example>
-  <p>
-    Example
-  </p>
-</Example>
-`;

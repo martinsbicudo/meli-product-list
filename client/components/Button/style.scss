@@ -1,0 +1,29 @@
+.Button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: map-get($colors, "meli-mine-shaft");
+  background-color: map-get($colors, "meli-gallery");
+  padding: 1.1rem;
+  font-size: 1.4rem;
+  border-radius: .2rem;
+  border: .1rem solid transparent;
+  outline: 0;
+
+  &:disabled > * { opacity: .5; }
+
+  &:not([disabled]) { cursor: pointer; }
+
+  &:focus { border-color: map-get($colors, "meli-denim"); }
+
+  &DodgerBlue {
+    color: map-get($colors, "meli-white");
+    background-color: map-get($colors, "meli-dodger-blue");
+  }
+
+  &Bigger {
+    padding: 2rem;
+    font-size: 2.2rem;
+  }
+}

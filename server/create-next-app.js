@@ -14,8 +14,10 @@ const onChangeBlur = (error) => {
 module.exports = (app, Logger) => {
   nextApp.prepare().then(() => app.get('*', (req, res) => handle(req, res)));
 
-  http.createServer(app)
-    .listen(SERVER_PORT)
-    .on('error', onChangeBlur);
+  const server = http.createServer(app)
+    .listen(SERVER_PORT);
+
+  server.on('error', onChangeBlur);
+
   Logger.info(`> Server ready on port ${SERVER_PORT}`);
 };

@@ -1,17 +1,16 @@
 import React from 'react';
-import Head from 'next/head';
-import Example from '@Components/Example';
-import ExampleContainer from '@Containers/Example';
+import EmptyAlert from '@Containers/EmptyAlert';
+import Layout from './_layout';
 
 const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-    </Head>
-
-    <Example />
-    <ExampleContainer />
-  </div>
+  <Layout title="Busca de produtos no Mercado Livre">
+    <EmptyAlert
+      empty={{
+        title: 'Lista vazia',
+        description: 'Efetue uma pesquisa para mostrar a lista de produtos :)',
+      }}
+    />
+  </Layout>
 );
 
 export default Home;
