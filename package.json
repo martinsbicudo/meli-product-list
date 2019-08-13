@@ -50,6 +50,7 @@
     "react": "16.8.6",
     "react-dom": "^16.8.6",
     "react-storybook-console": "^2.0.4",
+    "request-promise": "^4.2.4",
     "storybook-dark-mode": "^0.1.4",
     "style-loader": "^1.0.0",
     "stylelint": "^10.1.0",
