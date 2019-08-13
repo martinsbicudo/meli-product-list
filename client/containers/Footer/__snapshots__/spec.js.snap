@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers - <Footer /> Wrapper Snapshot 1`] = `
+<DocumentFragment>
+  <footer>
+    <div
+      class="Container"
+    >
+      Footer
+    </div>
+  </footer>
+</DocumentFragment>
+`;
