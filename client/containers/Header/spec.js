@@ -1,10 +1,7 @@
-import '@Client/__mocks__/useRouter'; // eslint-disable-line
-import Header from '.'; // eslint-disable-line
+import '@Client/__mocks__/useRouter';
+import Header from '.';
 
 describe('Containers - <Header />', () => {
-  const setState = jest.fn();
-  const useStateSpy = jest.spyOn(React, 'useState');
-  useStateSpy.mockImplementation((value) => [value, setState]);
   const createWrapper = () => render(
     <Header />,
   );

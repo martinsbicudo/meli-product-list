@@ -1,0 +1,56 @@
+.SearchedList {
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &Title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 100%;
+
+    @include query-max("tablet") { text-align: center; }
+  }
+
+  &Box {
+    display: flex;
+    align-items: stretch;
+
+    @include query-max("mobile") { flex-direction: column; }
+
+    @include query-min("mobile") { flex-wrap: wrap; }
+  }
+
+  &Item {
+    cursor: pointer;
+    width: 100%;
+
+    @include query-min("desktop") { width: calc((100% / 3) - 1rem); }
+
+    @include query-between("tablet", "desktop") { width: calc(50% - 1rem); }
+
+    &:not(:last-child) { margin-bottom: 2rem; }
+  }
+
+  &Item:not(:nth-child(3n)) {
+    @include query-min("desktop") {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &Item:nth-child(odd) {
+    @include query-between("tablet", "desktop") {
+      margin-right: 2rem;
+    }
+  }
+
+
+  &Query {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
