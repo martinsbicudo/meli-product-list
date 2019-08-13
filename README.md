@@ -48,8 +48,27 @@ npm run start:docker
 ```
 
 Run project **without** `Docker`
-> Project run at port **80**
+> Project run at port **3000**
 
 ```sh
-npm run start
+npm run build
+npm start
+```
+**OR**
+```sh
+npm run dev
+```
+
+Run **StyleGuide** with `Storybook`
+> Project run at port **9001**
+
+```sh
+npm run storybook
+```
+
+### Health Check
+> Verify Health of Server, **after run project**
+
+```sh
+curl http://localhost:[PORT]/api/health-check
 ```

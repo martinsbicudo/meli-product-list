@@ -1,0 +1,7 @@
+.git
+.vscode
+node_modules
+_tmp
+
+!build/static/node_modules
+!build/server/node_modules

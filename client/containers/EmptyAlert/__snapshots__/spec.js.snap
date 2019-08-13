@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers - <EmptyAlert /> Wrapper Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="EmptyAlert"
+  >
+    <div
+      class="EmptyState"
+    >
+      <figure
+        class="EmptyStateFigure"
+      >
+        <img
+          alt="Lista Vazia"
+          class="EmptyAlertImage"
+          src="[object Object]"
+          srcset="[object Object] 2x"
+          title="Lista Vazia"
+        />
+      </figure>
+      <h1
+        class="EmptyStateTitle"
+      />
+      <p
+        class="EmptyStateDescription"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

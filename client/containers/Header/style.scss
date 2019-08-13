@@ -1,0 +1,60 @@
+.Header {
+  background-color: map-get($colors, "meli-turbo");
+  padding: 1.5rem 0;
+
+  &Container {
+    @include query-max("mobile") {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &LogoDesktop,
+  &LogoMobile {
+    cursor: pointer;
+
+    @include query-max("mobile") { margin-bottom: 2rem; }
+
+    @include query-min("mobile") { margin-right: 2rem; }
+  }
+
+  &LogoDesktop {
+    @include query-max("mobile") { display: none; }
+  }
+
+  &LogoMobile {
+    width: 15rem;
+    object-fit: contain;
+
+    @include query-min("mobile") { display: none; }
+  }
+
+  &Form {
+    flex: 1;
+    display: flex;
+
+    @include query-max("mobile") { min-width: 100%; }
+  }
+
+  &Search {
+    box-shadow: 0 0 .2rem map-get($colors, "meli-dusty-gray");
+
+    &Focus {
+      transition: .2s box-shadow ease;
+      box-shadow: 0 0 1.5rem map-get($colors, "meli-dusty-gray");
+    }
+
+    &Image {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+
+  &SearchImage {
+    @include query-max("mobile") { margin-right: 1rem; }
+  }
+
+  &SearchSpan {
+    @include query-min("mobile") { display: none; }
+  }
+}
