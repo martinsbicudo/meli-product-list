@@ -6,6 +6,8 @@
     "start:docker": "sh ./conf/docker/start.sh",
     "build": "NODE_ENV=production next build ./client",
     "dev": "nodemon --inspect ./server",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook -o .out",
     "lint": "eslint . && stylelint './**/*.{css,scss}'",
     "test": "jest --verbose false --silent",
     "test:watch": "jest --watch"
@@ -16,6 +18,8 @@
     }
   },
   "dependencies": {
+    "@storybook/addon-info": "^5.1.11",
+    "@storybook/react": "^5.1.11",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^9.1.0",
     "@zeit/next-css": "^1.0.1",
@@ -40,9 +44,14 @@
     "next-eslint": "0.0.4",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-css-reset": "^1.0.2",
+    "postcss-normalize": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "16.8.6",
     "react-dom": "^16.8.6",
+    "react-storybook-console": "^2.0.4",
+    "storybook-dark-mode": "^0.1.4",
+    "style-loader": "^1.0.0",
     "stylelint": "^10.1.0",
     "stylelint-bare-webpack-plugin": "^1.1.2",
     "webpack": "^4.39.1"
