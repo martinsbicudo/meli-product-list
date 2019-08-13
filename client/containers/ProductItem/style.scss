@@ -1,0 +1,29 @@
+.ProductItem {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
+
+  &Figure {
+    margin: -2rem;
+    margin-right: 2rem;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  &Price {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+
+    span {
+      color: map-get($colors, "meli-dodger-blue");
+      margin-right: .2rem;
+    }
+  }
+
+  &Title {
+    font-size: 1.4rem;
+  }
+}
