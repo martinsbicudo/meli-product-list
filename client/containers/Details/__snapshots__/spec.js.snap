@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Containers - <Details /> Wrapper Snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="Details"
+  >
+    <div
+      class="Loading"
+    >
+      <div
+        class="LoadingBars"
+      >
+        <i
+          class="LoadingBar"
+        />
+        <i
+          class="LoadingBar"
+        />
+        <i
+          class="LoadingBar"
+        />
+        <i
+          class="LoadingBar"
+        />
+        <i
+          class="LoadingBar"
+        />
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
