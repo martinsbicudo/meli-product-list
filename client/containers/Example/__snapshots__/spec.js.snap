@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Containers - <Example /> Wrapper Snapshot 1`] = `
-<DocumentFragment>
-  <p>
-    Example
-  </p>
-</DocumentFragment>
-`;

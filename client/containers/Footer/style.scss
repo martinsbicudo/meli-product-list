@@ -1,0 +1,38 @@
+.Footer {
+  padding: 2rem 0;
+  background-color: map-get($colors, "meli-gallery");
+
+  &Text {
+    color: map-get($colors, "meli-dove-gray");
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+
+    &::after {
+      content: "\2764";
+      color: map-get($colors, "meli-turbo");
+      font-size: 2rem;
+    }
+  }
+
+  &Link {
+    color: map-get($colors, "meli-dodger-blue");
+    padding: .5rem 0;
+    margin: 0 .5rem;
+    text-decoration: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: .2rem;
+      background: currentColor;
+      transition: .2s width;
+    }
+
+    &:hover::before { width: 100%; }
+  }
+}
